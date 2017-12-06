@@ -21,7 +21,7 @@ inputBox.addEventListener("keydown", function (e) {
     // Clear previous list of products
     productsElem.innerHTML = "";
 
-      console.log();
+    //  console.log();
       
     // Show the newly filtered list
     show(filter(products, inputBox.value));
@@ -48,7 +48,7 @@ function filter(data, term) {
     // Look at each value in the product object 
     // and compare it to the search term
     for (const property in e) {
-      if (e[property].toString().indexOf(term) >= 0) {
+      if (e[property].toString().toLowerCase().indexOf(term) >= 0) {
         return e;
       }
     }
