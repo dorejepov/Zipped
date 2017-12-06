@@ -75,7 +75,7 @@
             <input type="password"required autocomplete="off"/>
           </div>
           
-              <button type="submit" class="button button-block"/><h1>Pay</h1></button>
+              <button type="submit" id="pay" class="button button-block"/><h1>Pay</h1></button>
           
           </form>
 
@@ -98,7 +98,7 @@
 
     <script type="text/javascript">
     $(function () {
-      $('form').submit(function () {
+      $('pay').submit(function () {
         $.post('index.html', function () {
           window.location = 'index.html';
         });
