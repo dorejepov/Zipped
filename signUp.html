@@ -93,7 +93,19 @@
         
         
         
-    </body>
     <script src="signIn.js">
-</script>
+     </script>
+
+    <script type="text/javascript">
+    $(function () {
+      $('form').submit(function () {
+        $.post('index.html', function () {
+          window.location = 'index.html';
+        });
+        return false;
+      });
+    });
+    </script>
+
+    </body>
 </html>
