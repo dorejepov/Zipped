@@ -6,6 +6,10 @@ body {
     background-image:url('assets/pdf-1.jpg');
     background-attachment:fixed;
     background-size:cover;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* Style the logo 
